@@ -14,23 +14,23 @@
   <mj-head>
 
     <mj-style inline="inline">
-      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; }
+      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; } .banner-bg { height: 100%; }
     </mj-style>
 
     <mj-preview>
     </mj-preview>
-    
+
     <mj-title>Malakoff Mederic avec vous</mj-title>
-    
+
     <mj-font href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700" name="Open Sans"></mj-font>
 
     <!--Classes-->
     <mj-attributes>
-      <mj-all font-family="Open Sans, sans-serif" padding="0" padding-left="5" padding-right="5"></mj-all>
+      <mj-all font-family="Open Sans, Arial, sans-serif" padding="0" padding-left="5" padding-right="5"></mj-all>
       <mj-container background-color="#fefefe" />
-      <mj-text align="left" color="#555"/>
+      <mj-text align="left" color="#555" />
       <mj-section padding-top="25" padding-bottom="25" />
-      <mj-image width="0" padding-bottom="10" align="left"/>
+      <mj-image width="0" padding-bottom="10" align="left" />
 
       <!-- Header classes -->
       <mj-class name="header-title-1" align="right" font-size="32" font-weight="100" color="#fefefe" text-transform="capitalize"></mj-class>
@@ -64,7 +64,7 @@
       <mj-section padding-bottom="0" padding-top="0">
         <mj-column>
           <mj-raw>
-            <p style="color:#555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:Open Sans,sans-serif">Si cet e-mail ne s'affiche pas correctement, <a href="#" class="nolink" style="color:#555;text-decoration:underline;">consultez la version en ligne</a>.</p>
+            <p style="color:#555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:Open Sans, Arial, sans-serif">Si cet e-mail ne s'affiche pas correctement, <a href="#" class="nolink" style="color:#555;text-decoration:underline;">consultez la version en ligne</a>.</p>
           </mj-raw>
         </mj-column>
       </mj-section>
@@ -79,7 +79,21 @@
 
       <!---------------------- Banner ----------------------->
 
-      <mj-section padding-right="20" background-url="https://arnaudambro.github.io/img/shape.png" background-color="#fefefe" background-repeat="no-repeat">
+      <mj-section padding-right="0" padding-left="0" background-url="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_bg.png?raw=true" background-repeat="no-repeat" css-class="banner-bg">
+        <mj-column>
+          <mj-table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="middle">
+                	<img src="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_text.png?raw=true" width="300" padding-right="0" padding-left="0" align="right" />
+              </td>
+            </tr>
+          </mj-table>
+
+        </mj-column>
+      </mj-section>
+
+
+      <!--<mj-section padding-right="20" background-url="https://arnaudambro.github.io/img/shape.png" background-color="#fefefe" background-repeat="no-repeat">
         <mj-column width="100%">
           <mj-text mj-class='header-title-1' padding-top="10">
             <p>Malakoff médéric</p>
@@ -94,11 +108,11 @@
         <mj-column width="100%">
           <mj-raw>
             <div style="float:right;margin-right:5px;">
-              <span style=";text-transform:uppercase;font-family:'Open Sans',sans-serif;background-color:#fefefe;color:#ff8d00;padding-right:5px;padding-left:5px">Juin 2017</span>
+              <span style=";text-transform:uppercase;font-family:'Open Sans, Arial, sans-serif',sans-serif;background-color:#fefefe;color:#ff8d00;padding-right:5px;padding-left:5px">Juin 2017</span>
             </div>
           </mj-raw>
         </mj-column>
-      </mj-section>
+      </mj-section>-->
 
       <!---------------------- Texte de transition ----------------------->
 
@@ -322,7 +336,7 @@
       <mj-section padding-bottom="0" padding-top="0">
         <mj-column>
           <mj-raw>
-            <p style="color:#555555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:'Open Sans'">Si vous ne souhaitez plus recevoir de message de notre part, <a href="#" class="nolink" style="color:#555555;text-decoration:underline;">cliquez-ici</a>.</p>
+            <p style="color:#555555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:'Open Sans, Arial, sans-serif'">Si vous ne souhaitez plus recevoir de message de notre part, <a href="#" class="nolink" style="color:#555555;text-decoration:underline;">cliquez-ici</a>.</p>
           </mj-raw>
         </mj-column>
       </mj-section>
