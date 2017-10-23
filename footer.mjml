@@ -1,0 +1,46 @@
+<!--------- Message de fin ----------->
+
+
+<mj-section padding-bottom="0">
+  <mj-column>
+    <mj-text align="center">
+      Malakoff Médéric Avec Vous fait une pause en juillet-août :<br> nous vous retrouverons avec plaisir dès le mois de septembre.<br/>Bel été à tous !
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<!--------- Réseaux sociaux ----------->
+
+<mj-section padding-top="0">
+  <mj-column width="15%">
+    <mj-image src="img/fb.jpg" width="42"></mj-image>
+  </mj-column>
+  <mj-column width="15%">
+    <mj-image src="img/twiter.jpg" width="42"></mj-image>
+  </mj-column>
+</mj-section>
+
+<!--------- Réseaux sociaux ----------->
+
+<mj-section padding-top="10" padding-bottom="30" background-color="#ec9329">
+  <mj-column>
+    <mj-text align="center" color="#fff" font-size="20" font-weight="100" letter-spacing="1.5px">
+      malakoffmederic.com
+    </mj-text>
+    <mj-text align="center" color="#fff" font-size="10" line-height="1" font-weight="100">
+      Conformément à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée par la loi du 6 août 2004, vous disposez d’un droit d’accès, de rectification et, le cas échéant, de suppression de toute information vous concernant figurant dans nos
+      fichiers,en vous adressant à : sgil.retraitecomplementaire@malakoffmederic.com ou à Malakoff Médéric Pôle Informatique et Libertés Retraite Complémentaire 21 rue Laffitte - 75317 Paris Cedex 9.<br> Association de Moyens Retraite (AMR) -
+      Association régie par la loi du 1er juillet 1901 - Siège social : 21, rue Laffitte - 75009 Paris - Siret : 507 628 444 00014 - APE 8430B
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<!--------- Désabonnement ----------->
+
+
+<mj-section padding-bottom="0">
+  <mj-column>
+    <mj-text align="center" font-size="11" line-height="1" font-weight="100" text-decoration="none">
+      Si vous ne souhaitez plus recevoir de message de notre part, <a href="#" color="#000" text-decoration="none">cliquez-ici</a></mj-text>
+  </mj-column>
+</mj-section>

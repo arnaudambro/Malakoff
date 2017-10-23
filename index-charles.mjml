@@ -1,0 +1,96 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" />
+    <mj-style inline="inline">
+      .link-nostyle { color: inherit; text-decoration: none;font-family:"Open Sans"; font-weight:100; } .divider{float:left;} .divider:after{clear:both;} .underline{text-decoration:underline; } .hero{height:190px;}
+    </mj-style>
+    <mj-attributes>
+      <!--Header style -->
+      <mj-class name="title1" align="left" font-family='Open Sans' color="#FFF" font-weight=600 font-size=30px letter-spacing="3px" padding-top="40px"></mj-class>
+      <mj-class name="title2" align="left" font-family='Open Sans' color="#FFF" font-size=25px letter-spacing="1px" line-height="26px" padding-top="0px" font-weight=300></mj-class>
+      <!--Fin Header style -->
+      <mj-class name="divider" width="50px" align="left" />
+      <mj-text align="center" color="#000" />
+      <mj-container background-color="#FFF" />
+    </mj-attributes>
+
+    <!--Header style -->
+    <mj-style>
+      @media (max-width:480px) { .title1 div { bottom:10px; position: relative; } .title2 div { bottom:15px; position: relative; } }
+    </mj-style>
+    <!--Fin Header style -->
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#f9f9f9">
+
+      <mj-include path="./header.mjml" />
+      <mj-section background-url="https://arnaudambro.github.io/img/shape.png" background-color="#FFF" css-class="hero">
+        <mj-column>
+          <mj-text mj-class='title1' css-class="title1" padding-bottom="0">
+            <p>IMPORTANT</p>
+          </mj-text>
+          <mj-text mj-class='title2' css-class="title2">
+            V&eacute;rifiez vos coordonn&eacute;es
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#FFF">
+        <mj-column>
+          <!--test -->
+          <mj-text align="left" font-weight=700>
+            Cher Mr Prénom Nom,
+          </mj-text>
+          <mj-text align="left" font-family="Open Sans">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <br>
+            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <br>
+            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            <br>
+            <br>
+          </mj-text>
+          <mj-button background-color="#0d1b72" color="white" border-radius="40px" align="left" href="#">
+            Je v&eacute;rifie mes coordonn&eacute;es
+          </mj-button>
+          <mj-text align="left" font-family="Open Sans" padding-top="40px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <br>
+            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <br>
+            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br>
+            <br>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#f2f2f2">
+        <mj-column>
+          <mj-text align="left" font-family='camptonLight, Open Sans' font-size=27px letter-spacing="1px" color="#737373" line-height="27px" font-weight=100>
+            Vous avez des questions ?
+          </mj-text>
+          <mj-text align="left" font-size="25px" font-family='camptonLight, Open Sans' letter-spacing="1px" color="#737373" padding-top="0" font-weight=600>
+            CONTACTEZ-NOUS
+            <br>
+          </mj-text>
+          <mj-divider css-class="divider" mj-class="divider" border-width="2px" border-style="solid" align="left" border-color="#737373" />
+          <mj-button background-color="#ff8700" color="white" border-radius="40px" align="left" href="#">
+            loremipsum@malakoffmederic.com
+          </mj-button>
+          <mj-image href="#" src="http://charlesdoiron.fr/malakoff/tel.png" width="222px" align="left">
+          </mj-image>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#0d1b72">
+        <mj-column>
+          <mj-text align="center" color="#FFF" font-family="Open Sans">
+            <a href="#" class="link-nostyle">  Pour plus d'informations, rendez-vous sur 
+                                        <strong>malakoffmederic.com
+                                        </strong>
+                                      </a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./footer.mjml" />
+    </mj-container>
+  </mj-body>
+</mjml>

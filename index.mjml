@@ -1,0 +1,335 @@
+<mjml>
+  <!-- Conseils de développement
+-> La limite entre Desktop et Mobile, c'est 480 pixels. 
+-> MJML c'est mobile first.
+-> Lorsqu'on précise la width d'un mj-column, il ne s'applique qu'en version Desktop. En version mobile, c'est 100%.
+-> Lorsqu'on indique pas de width pour l'image, une fois compilé en HTML l'image est inclue dans un <td> qui prend une width particulière, un peu inattendue et qui dérange la taille de l'image en version mobile. Lorsqu'on précise width="0", cela donne la width au futur <td> et l'image prend 100% de la largeur en version mobile.
+-> Outlook insert un page-break après 1800 pixels de longueur
+-> border-color: black!important; => NON
+-> border-color: black !important; => OUI
+-> Pour les liens sur Gmail, le seul truc qui marche c'est le rajout de la classe nolink
+-->
+
+
+  <mj-head>
+
+    <mj-style inline="inline">
+      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; }
+    </mj-style>
+
+    <mj-preview>
+    </mj-preview>
+    
+    <mj-title>Malakoff Mederic avec vous</mj-title>
+    
+    <mj-font href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700" name="Open Sans"></mj-font>
+
+    <!--Classes-->
+    <mj-attributes>
+      <mj-all font-family="Open Sans, sans-serif" padding="0" padding-left="5" padding-right="5"></mj-all>
+      <mj-container background-color="#fefefe" />
+      <mj-text align="left" color="#555"/>
+      <mj-section padding-top="25" padding-bottom="25" />
+      <mj-image width="0" padding-bottom="10" align="left"/>
+
+      <!-- Header classes -->
+      <mj-class name="header-title-1" align="right" font-size="32" font-weight="100" color="#fefefe" text-transform="capitalize"></mj-class>
+      <mj-class name="header-title-2" align="right" font-size="32" font-weight="500" color="#fefefe" text-transform="uppercase"></mj-class>
+      <mj-class name="header-caption" align="right" font-size="12" font-weight="100" color="#fefefe"></mj-class>
+      <mj-class name="header-date" align="right" font-size="12" font-weight="100" color="#ff8d00" text-transform="uppercase" container-background-color="#fefefe" width="auto"></mj-class>
+
+      <!-- Transition classes -->
+      <mj-class name="transition-title" font-size="16" padding-left="2" padding-right="2" font-weight="700"></mj-class>
+      <mj-class name="transition-content" font-size="14" padding-left="2" padding-right="2"></mj-class>
+
+      <!-- Content classes -->
+
+      <mj-class name="title-1" font-size="19" color="#8f8f8f" text-transform="uppercase" padding-bottom="10" align="left"></mj-class>
+      <mj-class name="caption" font-size="17" color="#f18a01" line-height="1.2" align="left" padding-bottom="10"></mj-class>
+      <mj-class name="description" font-size="14" line-height="1.3" css-class="minheight80"></mj-class>
+      <mj-class name="typical-divider" border-color="#f18a01" width="60" border-width="3px" css-class="custom-divider" padding-bottom="10"></mj-class>
+      <mj-class name="button" padding-top="10" inner-padding="0 30" background-color="#0075c0" height="30" border-radius="30" color="#fefefe" font-weight="300" align="right"></mj-class>
+
+      <!-- Layout classes -->
+
+    </mj-attributes>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-container>
+
+      <!--------- Consultez la version en ligne ----------->
+
+      <mj-section padding-bottom="0" padding-top="0">
+        <mj-column>
+          <mj-raw>
+            <p style="color:#555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:Open Sans,sans-serif">Si cet e-mail ne s'affiche pas correctement, <a href="#" class="nolink" style="color:#555;text-decoration:underline;">consultez la version en ligne</a>.</p>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <!---------------------- Logo ----------------------->
+
+      <mj-section padding-bottom="0" padding-top="0">
+        <mj-column>
+          <mj-image src="https://arnaudambro.github.io/img/logo.jpg" width="300" padding-bottom="0" align="left"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <!---------------------- Banner ----------------------->
+
+      <mj-section padding-right="20" background-url="https://arnaudambro.github.io/img/shape.png" background-color="#fefefe" background-repeat="no-repeat">
+        <mj-column width="100%">
+          <mj-text mj-class='header-title-1' padding-top="10">
+            <p>Malakoff médéric</p>
+          </mj-text>
+          <mj-text mj-class='header-title-2'>
+            Avec Vous
+          </mj-text>
+          <mj-text mj-class='header-caption' padding-top="15">
+            La newletter de votre retraite complémentaire
+          </mj-text>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-raw>
+            <div style="float:right;margin-right:5px;">
+              <span style=";text-transform:uppercase;font-family:'Open Sans',sans-serif;background-color:#fefefe;color:#ff8d00;padding-right:5px;padding-left:5px">Juin 2017</span>
+            </div>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <!---------------------- Texte de transition ----------------------->
+
+      <mj-section>
+        <mj-column>
+          <mj-text mj-class="transition-title">
+            Une nouvelle identité visuelle</mj-text>
+          <mj-text mj-class="transition-content">
+            Malakoff Médéric fait évoluer son logo et adopte une nouvelle charte graphique, comme vous pouvez le découvrir dans ce numéro.</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+
+      <!--------- Premier chapitre : sur deux lignes, deux colonnes ----------->
+      <mj-section padding-bottom="0">
+        <mj-column width="100%">
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Loisirs
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="0">
+        <mj-column>
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/img_1.jpg"></mj-image>
+        </mj-column>
+
+        <mj-column width="50%">
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption" padding-top="0">
+            Prenez soin de la nature<br>elle vous le rendra !
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+      </mj-section>
+
+
+      <mj-section>
+
+        <!--------- Deuxième chapitre : sur une ligne, une colonne----------->
+
+        <mj-column width="45%" mj-class="column-left">
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Santé
+          </mj-text>
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/img_2.jpg"></mj-image>
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption">
+            Initiez-vous gratuitement<br>aux gestes de premiers secours
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+        <!--------- Divider entre deux colonnes : 10% de largeur en version Desktop (invisible en Mobile), 50px de hauteur en version mobile (invisible en Desktop)----------->
+
+        <mj-column width="10%" css-class="dividerBetweenTwoColumns" mj-class="column-center">
+        </mj-column>
+
+
+
+        <!--------- Troisième chapitre : sur une ligne, une colonne----------->
+
+        <mj-column width="45%" mj-class="column-right">
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Pratique
+          </mj-text>
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption">
+            Prenez soin de la nature<br>elle vous le rendra !
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+      </mj-section>
+      <mj-section>
+
+        <!--------- Quatrième chapitre : sur une ligne, une colonne----------->
+
+        <mj-column width="45%">
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Santé
+          </mj-text>
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/img_2.jpg"></mj-image>
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption">
+            Initiez-vous gratuitement<br>aux gestes de premiers secours
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+        <!--------- Divider entre deux colonnes : 10% de largeur en version Desktop (invisible en Mobile), 50px de hauteur en version mobile (invisible en Desktop)----------->
+
+
+        <mj-column width="10%" css-class="dividerBetweenTwoColumns">
+        </mj-column>
+
+
+        <!--------- Cinquième chapitre : sur une ligne, une colonne----------->
+
+        <mj-column width="45%">
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Pratique
+          </mj-text>
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption">
+            Prenez soin de la nature<br>elle vous le rendra !
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+      </mj-section>
+
+
+      <!--------- Sixième chapitre : sur deux lignes, deux colonnes ----------->
+      <mj-section padding-bottom="0">
+        <mj-column>
+          <!--------- Titre ----------->
+          <mj-text mj-class="title-1">
+            Loisirs
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="0">
+        <mj-column width="33.3333%">
+          <!--------- Image ----------->
+          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+        </mj-column>
+
+        <mj-column width="66.6666%">
+          <!--------- Caption ----------->
+          <mj-text mj-class="caption">
+            Prenez soin de la nature<br>elle vous le rendra !
+          </mj-text>
+          <mj-divider mj-class="typical-divider"></mj-divider>
+          <!--------- Description ----------->
+          <mj-text mj-class="description" css-class="minheight50">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
+          <!--------- Bouton ----------->
+          <mj-button mj-class="button">Lire la suite</mj-button>
+        </mj-column>
+
+      </mj-section>
+
+      <!--------- Message de fin ----------->
+
+
+      <mj-section padding-bottom="10">
+        <mj-column>
+          <mj-text align="center">
+            Malakoff Médéric Avec Vous fait une pause en juillet-août :<br> nous vous retrouverons avec plaisir dès le mois de septembre.<br/>Bel été à tous !
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!--------- Réseaux sociaux ----------->
+
+      <mj-section padding-top="10">
+        <mj-column>
+          <mj-raw>
+            <div style="text-align:center">
+              <img src="https://arnaudambro.github.io/img/fb.jpg" style="width:42;padding-right:25px;"><img src="https://arnaudambro.github.io/img/twiter.jpg" style="width:42;padding-left:25px;">
+            </div>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <!--------- Rectangle orange de fin ----------->
+
+      <mj-section padding-top="10" padding-bottom="30" background-color="#ec9329">
+        <mj-column>
+          <mj-text align="center" color="#FEFEFE" font-size="20" letter-spacing="1.2" font-weight="100" padding-bottom="30" padding-top="10" css-class="nolink">
+            <a href="http://malakoffmederic.com" class="nolink">malakoffmederic.com</a>
+          </mj-text>
+          <mj-text align="center" color="#FEFEFE" font-size="10" line-height="1.2" font-weight="100" css-class="nolink">
+            Conformément à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée par la loi du 6 août 2004, vous disposez d’un droit d’accès, de rectification et, le cas échéant, de suppression de toute information vous concernant figurant dans nos
+            fichiers,en vous adressant à : <a href="mailto:sgil.retraitecomplementaire@malakoffmederic.com" class="nolink" style="color:#FEFEFE;text-decoration:none;">sgil.retraitecomplementaire@malakoffmederic.&#173;com</a> <br>ou à Malakoff
+            Médéric Pôle Informatique et Libertés Retraite Complémentaire 21 rue Laffitte - 75317 Paris Cedex 9.<br> Association de Moyens Retraite (AMR) - Association régie par la loi du 1er juillet 1901 - Siège social : 21, rue Laffitte - 75009 Paris
+            - Siret : 507 628 444 00014 - APE 8430B
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <!--------- Désabonnement ----------->
+
+
+      <mj-section padding-bottom="0" padding-top="0">
+        <mj-column>
+          <mj-raw>
+            <p style="color:#555555;text-align:center;font-size:11px;line-height:11px;font-weight:100;font-family:'Open Sans'">Si vous ne souhaitez plus recevoir de message de notre part, <a href="#" class="nolink" style="color:#555555;text-decoration:underline;">cliquez-ici</a>.</p>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+
+
+    </mj-container>
+  </mj-body>
+
+</mjml>

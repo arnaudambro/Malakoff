@@ -1,0 +1,33 @@
+ <mjml>
+    <mj-head>
+      <mj-style>
+          div[style*="vertical-align:top;"] {
+        display: none;
+            text-align: center !important;
+          }
+      </mj-style>
+      <mj-style inline="inline">
+        .link-nostyle {
+          color: inherit;
+          text-decoration: none
+        }
+      </mj-style>
+    </mj-head>
+    <mj-body>
+      <mj-container>
+        <mj-section >
+          <mj-column vertical-align="top">
+
+            <mj-image width="100" src="/assets/img/logo-small.png"></mj-image>
+
+            <mj-divider border-color="#F45E43"></mj-divider>
+
+            <mj-text  font-size="20px" color="#F45e46" font-family="helvetica">
+              Hello <a css-class="caca" href="https://mjml.io" class="link-nostyle">World</a>
+            </mj-text>
+
+          </mj-column>
+        </mj-section>
+      </mj-container>
+    </mj-body>
+  </mjml>

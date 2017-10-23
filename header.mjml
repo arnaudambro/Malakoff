@@ -1,0 +1,11 @@
+<mj-section background-url="img/header-bg.png">
+
+  <mj-column>
+    <mj-text>
+      
+    </mj-text>
+  </mj-column>
+
+</mj-section>
+
+      <!--<mj-include path="./header.mjml" />-->
