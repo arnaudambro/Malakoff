@@ -14,7 +14,8 @@
   <mj-head>
 
     <mj-style inline="inline">
-      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; } .banner-bg { height: 180px; }
+      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; } .banner-bg
+      { height: 180px; background-repeat: no-repeat; }
     </mj-style>
 
     <mj-preview>
@@ -45,9 +46,15 @@
       <!-- Content classes -->
 
       <mj-class name="title-1" font-size="19" color="#8f8f8f" text-transform="uppercase" padding-bottom="10" align="left"></mj-class>
-      <mj-class name="caption" font-size="17" color="#f18a01" line-height="1.2" align="left" padding-bottom="10"></mj-class>
-      <mj-class name="description" font-size="14" line-height="1.3" css-class="minheight80"></mj-class>
+
+      <mj-class name="caption" font-size="17" color="#f18a01" line-height="1.2" align="left" padding-bottom="0"></mj-class>
+
+      <mj-class name="typical-divider-text" color="#f18a01" font-size="40"></mj-class>
+
       <mj-class name="typical-divider" border-color="#f18a01" width="60" border-width="3px" css-class="custom-divider" padding-bottom="10"></mj-class>
+
+      <mj-class name="description" font-size="14" line-height="1.3" css-class="minheight80" padding-top="10"></mj-class>
+
       <mj-class name="button" padding-top="10" inner-padding="0 30" background-color="#0075c0" height="30" border-radius="30" color="#fefefe" font-weight="300" align="right"></mj-class>
 
       <!-- Layout classes -->
@@ -79,18 +86,31 @@
 
       <!---------------------- Banner ----------------------->
 
-      <mj-section padding-right="0" padding-left="0" background-url="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_bg.png?raw=true" background-repeat="no-repeat" css-class="banner-bg">
+      <mj-section padding-top="0" padding-bottom="0" padding-right="0" padding-left="0" background-url="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_bg.png?raw=true" background-repeat="no-repeat">
         <mj-column>
           <mj-table width="100%" cellspacing="0" cellpadding="0">
             <tr>
-              <td align="right" valign="middle">
-                	<img src="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_text.png?raw=true" width="300" padding-right="0" padding-left="0" align="right" />
+              <td align="right" valign="middle" height="180px"  >
+                <img src="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_text.png?raw=true" width="300" padding-right="0" padding-left="0" align="right" />
               </td>
             </tr>
           </mj-table>
 
         </mj-column>
       </mj-section>
+      
+      <!--<mj-section padding-top="0" padding-bottom="0" padding-right="0" padding-left="0">
+        <mj-column>
+          <mj-table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="middle" height="180px" style="background-image:url(https://github.com/arnaudambro/Malakoff/blob/master/img/banner_bg.png?raw=true);height:180px;background-repeat:no-repeat;" >
+                <img src="https://github.com/arnaudambro/Malakoff/blob/master/img/banner_text.png?raw=true" width="300" padding-right="0" padding-left="0" align="right" />
+              </td>
+            </tr>
+          </mj-table>
+
+        </mj-column>
+      </mj-section>-->
 
 
       <!--<mj-section padding-right="20" background-url="https://arnaudambro.github.io/img/shape.png" background-color="#fefefe" background-repeat="no-repeat">
@@ -145,10 +165,11 @@
 
         <mj-column width="50%">
           <!--------- Caption ----------->
-          <mj-text mj-class="caption" padding-top="0">
+          <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
+
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -173,7 +194,9 @@
           <mj-text mj-class="caption">
             Initiez-vous gratuitement<br>aux gestes de premiers secours
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
+          <!--<mj-divider mj-class="typical-divider"></mj-divider>-->
+
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -200,7 +223,7 @@
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -223,7 +246,7 @@
           <mj-text mj-class="caption">
             Initiez-vous gratuitement<br>aux gestes de premiers secours
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -250,7 +273,7 @@
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -281,7 +304,7 @@
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
           </mj-text>
-          <mj-divider mj-class="typical-divider"></mj-divider>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
           <!--------- Description ----------->
           <mj-text mj-class="description" css-class="minheight50">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
@@ -318,7 +341,7 @@
       <mj-section padding-top="10" padding-bottom="30" background-color="#ec9329">
         <mj-column>
           <mj-text align="center" color="#FEFEFE" font-size="20" letter-spacing="1.2" font-weight="100" padding-bottom="30" padding-top="10" css-class="nolink">
-            <a href="http://malakoffmederic.com" class="nolink">malakoffmederic.com</a>
+            <a href="http://malakoffmederic.com" class="nolink" style="color:#FEFEFE;text-decoration:none;">malakoffmederic.com</a>
           </mj-text>
           <mj-text align="center" color="#FEFEFE" font-size="10" line-height="1.2" font-weight="100" css-class="nolink">
             Conformément à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée par la loi du 6 août 2004, vous disposez d’un droit d’accès, de rectification et, le cas échéant, de suppression de toute information vous concernant figurant dans nos
