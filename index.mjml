@@ -14,7 +14,7 @@
   <mj-head>
 
     <mj-style inline="inline">
-      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; } .banner-bg { height: 100%; }
+      .custom-divider { float: left; } .custom-divider:after { clear: both; } .minheight80 div { min-height:80px; } .minheight50 div { min-height:50px; } .dividerBetweenTwoColumns { min-height: 50px; } .nolink { text-decoration: inherit; color: inherit; } .banner-bg { height: 180px; }
     </mj-style>
 
     <mj-preview>
