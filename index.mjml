@@ -248,11 +248,7 @@
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
-          <mj-raw>
-            <a href="">
-              <img src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/btn.png" width="130px">
-            </a>
-            </mj-raw>
+              <mj-image src="img/btn.png" width="130px" align="right" padding-top="10px"/>
         </mj-column>
 
       </mj-section>
