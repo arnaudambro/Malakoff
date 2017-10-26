@@ -234,7 +234,7 @@
       <mj-section padding-top="0">
         <mj-column>
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/img_1.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/img_1.jpg"></mj-image>
         </mj-column>
 
         <mj-column width="50%">
@@ -242,12 +242,17 @@
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
           </mj-text>
-          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯</mj-text>
+          <mj-text mj-class="typical-divider-text">⎯⎯⎯⎯⎯
+            </mj-text>
 
           <!--------- Description ----------->
           <mj-text mj-class="description">Entretenir un jardin, faire pousser de jolies plantes sur son balcon ou partager d’agréables moments dans un potager collaboratif : le jardinage sous toutes ses formes est une source inépuisable de bienfaits. Pour la tête et les jambes !</mj-text>
           <!--------- Bouton ----------->
-          <mj-button mj-class="button">Lire la suite</mj-button>
+          <mj-raw>
+            <a href="">
+              <img src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/btn.png" width="130px">
+            </a>
+            </mj-raw>
         </mj-column>
 
       </mj-section>
@@ -263,7 +268,7 @@
             Santé
           </mj-text>
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/img_2.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/img_2.jpg"></mj-image>
           <!--------- Caption ----------->
           <mj-text mj-class="caption">
             Initiez-vous gratuitement<br>aux gestes de premiers secours
@@ -292,7 +297,7 @@
             Pratique
           </mj-text>
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/toutm.jpg"></mj-image>
           <!--------- Caption ----------->
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
@@ -315,7 +320,7 @@
             Santé
           </mj-text>
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/img_2.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/img_2.jpg"></mj-image>
           <!--------- Caption ----------->
           <mj-text mj-class="caption">
             Initiez-vous gratuitement<br>aux gestes de premiers secours
@@ -342,7 +347,7 @@
             Pratique
           </mj-text>
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/toutm.jpg"></mj-image>
           <!--------- Caption ----------->
           <mj-text mj-class="caption">
             Prenez soin de la nature<br>elle vous le rendra !
@@ -370,7 +375,7 @@
       <mj-section padding-top="0">
         <mj-column width="33.3333%">
           <!--------- Image ----------->
-          <mj-image src="https://arnaudambro.github.io/img/toutm.jpg"></mj-image>
+          <mj-image src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/toutm.jpg"></mj-image>
         </mj-column>
 
         <mj-column width="66.6666%">
@@ -404,7 +409,7 @@
         <mj-column>
           <mj-raw>
             <div style="text-align:center">
-              <img src="https://arnaudambro.github.io/img/fb.jpg" style="width:42;padding-right:25px;"><img src="https://arnaudambro.github.io/img/twiter.jpg" style="width:42;padding-left:25px;">
+              <img src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/fb.jpg" style="width:42;padding-right:25px;"><img src="https://raw.githubusercontent.com/arnaudambro/Malakoff/master/img/twiter.jpg" style="width:42;padding-left:25px;">
             </div>
           </mj-raw>
         </mj-column>
